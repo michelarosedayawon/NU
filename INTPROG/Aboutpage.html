@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - EduTrackr</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color:  rgb(179, 152, 117);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(123, 103, 76);
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            top: 30px;
+            z-index: 1000;
+            width: 80%;
+            max-width: 1200px;
+            padding: 12px 30px;
+            transition: all 0.2s ease-in-out;
+            font-size: 16px;
+            flex-wrap: wrap;
+        }
+        .nav-box{
+             display: flex;               
+             justify-content: center;     
+             gap: 50px;                  
+             width: 100%;             
+        }
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+            position: relative;
+            padding: 10px 25px;
+            border-radius: 20px;
+            transition: all 0.2s ease-in-out;
+        }
+        .navbar a.active, .navbar a:hover {
+            background: linear-gradient(120deg, rgb(171, 152, 127), rgb(123, 103, 76));
+            color: white;
+        }
+        .navbar a:hover::before, .navbar a.active::before {
+            width: 100%;
+            left: 0;
+        }
+        .about-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            padding: 20px;
+        }
+        .title {
+            font-size: 540%;
+            font-weight: 700;
+            margin-top: 10%;
+            margin-bottom: auto;
+        }
+        .title span {
+            color: white;
+        }
+        .description {
+            font-size: 110%;
+            max-width: 900px;
+            text-align: justify;
+            line-height: 1.6;
+            color: black;
+        }
+        .team-section {
+            background-color: rgb(211, 189, 159);
+            padding: 50px 0;
+            margin-top: 6%;
+        }
+        .team-title {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #3e3122;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .team-card {
+            background: #f9f9f9;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .team-card h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .team-card p {
+            font-size: 16px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="d-flex justify-content-center">
+        <nav class="navbar navbar-expand-lg">
+            <div class="nav-box">
+                <a href="Homepage.php" class="nav-link">Home</a>
+                <a href="Trackerpage.html" class="nav-link">Tracker</a>
+                <a href="Aboutpage.html" class="nav-link active">About</a>
+            </div>
+        </nav>
+    </div>
+
+     <!-- Title -->
+
+    <div class="about-container">
+        <h1 class="title"><span style="color:black;">Edu</span><span>Trackr</span></h1>
+        <!-- Description -->
+        <p class="description">
+            EduTrackr is a student grade-tracking system designed to help students and faculty efficiently manage academic records.
+            It provides an intuitive and user-friendly platform for monitoring grades, tracking progress, and ensuring academic transparency.
+            Developed as part of our Intermediate Programming course, this project aims to streamline academic record management while
+            fostering collaboration and innovation.
+        </p>
+    </div>
+
+    <div class="team-section">
+        <h2 class="team-title">Meet the Team!</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="img/Angel.jpg" alt="Profile 1">
+                <h3>Angel</h3>
+                <p>National University - Dasmariñas - BS Computer Science</p>
+            </div>
+            <div class="team-card">
+                <img src="img/Cheska.jpg" alt="Profile 2">
+                <h3>Cheska</h3>
+                <p>National University - Dasmariñas - BS Computer Science</p>
+            </div>
+            <div class="team-card">
+                <img src="img/Mich.jpg" alt="Profile 3">
+                <h3>Mich</h3>
+                <p>National University - Dasmariñas - BS Computer Science</p>
+            </div>
+            <div class="team-card">
+                <img src="img/Marta.jpg" alt="Profile 4">
+                <h3>Marta</h3>
+                <p>National University - Dasmariñas - BS Computer Science</p>
+            </div>
+            <div class="team-card">
+                <img src="img/Janna.jpg" alt="Profile 5">
+                <h3>Janna</h3>
+                <p>National University - Dasmariñas - BS Computer Science</p>
+            </div>
+            <div class="team-card">
+                <img src="img/Val.jpg" alt="Profile 6">
+                <h3>Valerie</h3>
+                <p>National University - Dasmariñas - BS Computer Science</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-border"></div>
+</body>
+</html>
