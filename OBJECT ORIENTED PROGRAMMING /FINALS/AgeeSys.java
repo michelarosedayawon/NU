@@ -1,6 +1,6 @@
 /*
 Disclaimer:
-This code was created for practice purposes only. It was based on a laboratory activity (Batch 2 of Lab 2) that I obtained **after** our own laboratory session. 
+This code was created for practice purposes only. It was based on a laboratory activity (Batch 2 of Lab) that I obtained **after** our own laboratory session. 
 It was not used to cheat or copy during the lab activity, but rather to review and reinforce my understanding of the concepts. 
 This practice code is separate from the official lab submissions and is intended solely for learning and improving my skills.
 */
